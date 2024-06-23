@@ -1,5 +1,3 @@
-// import UserData from "../UserData/UserData";
-// import UserStats from "../UserStats/UserStats";
 import css from "./Profile.module.css";
 
 export default function Profile({ name, tag, location, image, stats }) {
@@ -7,7 +5,7 @@ export default function Profile({ name, tag, location, image, stats }) {
 
   return (
     <div className={css.card}>
-      <div className={css.profile}>
+      <div>
         <div className={css.avatar}>
           <img className={css.avatarImage} src={image} alt="User avatar" />
           <p className={css.name}>{name}</p>
